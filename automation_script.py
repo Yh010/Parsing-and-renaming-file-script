@@ -12,7 +12,8 @@ for f in os.listdir():
     f_course = f_course.strip()
     f_num = f_num.strip()[1:].zfill(2) 
 
-    print('{}-{}-{}{}'.format(f_num,f_course,f_title,f_ext))
-
+    #print('{}-{}-{}{}'.format(f_num,f_course,f_title,f_ext))
+    new_name = '{}-{}-{}{}'.format(f_num,f_course,f_title,f_ext)
+    os.rename(f,new_name)
 
 
