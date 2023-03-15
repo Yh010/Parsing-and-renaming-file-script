@@ -15,5 +15,4 @@ for f in os.listdir():
     #print('{}-{}-{}{}'.format(f_num,f_course,f_title,f_ext))
     new_name = '{}-{}-{}{}'.format(f_num,f_course,f_title,f_ext)
     os.rename(f,new_name)
-
-
+#this will rearrange the filenames in ascending order of f_num
